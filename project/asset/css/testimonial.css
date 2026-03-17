@@ -1,0 +1,31 @@
+:root{
+    --nav-background-color: #343434;
+    --nav-listEnd-color: #F4F4F4;
+    --nav-listEnd-color-shadow: #A2A2A2;
+}
+/* nav-head */
+.nav-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: var(--nav-background-color);
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+.nav-list li{
+    padding: 0 2.2rem;
+}
+.nav-list a{
+    text-decoration: none;
+    color: var(--nav-listEnd-color);
+    transition: 0.5s;
+}
+.nav-list a:hover{
+    color: var(--white);
+    text-shadow: 2px 2px 5px var(--nav-listEnd-color-shadow);
+}
+
+/* lost content */

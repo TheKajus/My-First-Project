@@ -1,0 +1,112 @@
+:root{
+    --lightgreen: #16BA0A;
+    --green: #2ABD1B;
+    --white: #FFFF;
+    --dark: #383636;
+    --box-color: #464646;
+    --badge-color: #2B2B2B;
+    --background-color-img: #F7F7F7;
+    --nav-background-color: #343434;
+    --nav-listEnd-color: #F4F4F4;
+    --nav-listEnd-color-shadow: #A2A2A2;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+/* nav-head */
+.nav-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: var(--nav-background-color);
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+.nav-list li{
+    padding: 0 2.2rem;
+}
+.nav-list a{
+    text-decoration: none;
+    color: var(--nav-listEnd-color);
+    transition: 0.5s;
+}
+.nav-list a:hover{
+    color: var(--white);
+    text-shadow: 2px 2px 5px var(--nav-listEnd-color-shadow);
+}
+.countainer h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--dark);
+}
+.line{
+    margin: 0 47.5% 0 47.5%;
+    height: 9px;
+    width: 90px;
+    background-color: var(--lightgreen);
+}
+.start-box{
+    padding: 101px 0 61px 0;
+}
+.card-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.card-item-1{
+    padding: 34px 0 0 0;
+    flex-direction: row-reverse;
+}
+.card-list .card-item{
+    list-style: none;
+}
+.card-list::-webkit-scrollbar{
+    display: none;
+}
+.card-list .card-item .image-fixer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-list .card-item .card-box{
+    width: 501px;
+    height: 394px;
+    background-color: var(--background-color-img);
+}
+.card-list .card-item .badge{
+    width: 223px;
+    height: 33px;
+    color: var(--badge-color);
+    font-size: 1.6rem;
+    padding: 0 0 28px 0;
+}
+.card-list .card-item .card-title{
+    width: 577px;
+    height: 139px;
+    line-height: 27px;
+    font-size: 1.145rem;
+}
+.card-list .card-item .card-button{
+    margin: 36px 0 0 0;
+    padding: 19.51px 44.2745px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--lightgreen);
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.card-list .card-item .card-button:hover{
+    background-color: var(--dark);
+}

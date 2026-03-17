@@ -1,0 +1,182 @@
+:root{
+    --catogory-name-color: #605E5E;
+    --category-color: #A2A2A2;
+    --lightgreen: #16BA0A;
+    --white: #FFFF;
+    --dark: #383636;
+    --gray: #D6D6D6;
+    --darkgray: #ACABAB;
+    --form: #D6D6D6;
+    --bottom-color: #FAF7F7;
+    --image-background-color: hsl(117, 90%, 49%, 0.65);
+    --nav-listEnd-color-shadow: #A2A2A2;
+    --nav-listEnd-color: #F4F4F4;
+    --nav-background-color: #343434;
+    --search-bottom-color: #0d6b06;
+    --loading-background1: yellow;
+    --loading-background2: rgb(179, 179, 0);
+    --loading-line1: rgb(25, 25, 218);
+    --loading-line2: red;
+    --loading-line3: #383636;
+    --black: black;
+}
+
+/* need js count and crusor for footer */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+/* nav-head */
+.nav-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: var(--nav-background-color);
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+.nav-list li{
+    padding: 0 2.2rem;
+}
+.nav-list a{
+    text-decoration: none;
+    color: var(--nav-listEnd-color);
+    transition: 0.5s;
+}
+.nav-list a:hover{
+    color: var(--white);
+    text-shadow: 2px 2px 5px var(--nav-listEnd-color-shadow);
+}
+
+.countainer h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--dark);
+}
+.line{
+    margin: 0 47.5% 0 47.5%;
+    height: 9px;
+    width: 90px;
+    background-color: var(--lightgreen);
+}
+.start-box{
+    padding: 101px 0 61px 0;
+}
+.form{
+    display: grid;
+    place-items: center;
+}
+.input{
+    width: 623px;
+    padding: 1.5rem 25px;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    outline: none;
+}
+.massage-input{
+    width: 623px;
+    padding: 2.5rem 25px;
+    font-size: 1rem;
+    outline: none;
+}
+input::placeholder{
+    font-size: 1rem;
+    color: var(--black);
+    transition: 0.3s;
+}
+.button-countainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 100px 0;
+}
+.button-countainer .button{
+    padding: 20px 50px;
+    border: none;
+    background-color: var(--lightgreen);
+    color: var(--white);
+    border-radius: 10px / 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}
+.button-countainer .button:hover{
+    background-color: var(--dark);
+}
+
+/* countainer-2 */
+.countainer-2{
+    background-color: var(--dark);
+}
+.start-box-2{
+    color: var(--category-color);
+    display: grid;
+    place-items: center;
+}
+.pls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.line-2{
+    width: 700px;
+    height: 1px;
+    background-color: var(--lightgreen);
+}
+.form-4{
+    display: flex;
+    align-items: end;
+}
+.input-4{
+    width: 600px;
+    background-color: var(--dark);
+    color: var(--white);
+    border: none;
+    outline: none;
+    padding: 25px 0 10px 0;
+} .input-4::placeholder{
+    color: var(--darkgray);
+}
+.hdr3{
+    color: var(--white);
+    padding: 0 0 10px 0;
+    transition: 0.5s;
+    cursor: pointer;
+} .hdr3:hover{
+    color: red;
+}
+.useful-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 50px;
+}
+.useful-box > div > h2{
+    color: var(--white);
+}
+.useful-box > div > p{
+    color: var(--darkgray);
+}
+.useful-link{
+    padding: 50px;
+}
+.instagram{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+.footer{
+    text-align: center;
+    padding: 25px;
+    color: var(--darkgray);
+}
